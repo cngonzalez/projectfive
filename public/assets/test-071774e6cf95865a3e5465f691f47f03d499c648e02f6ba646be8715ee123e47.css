@@ -1,0 +1,94 @@
+body {
+    background-color: #FCFAF2;
+}
+
+select {
+	color: white;
+	background-color: #5D2E46;
+	border-color: #5D2E46;
+}
+
+.axis path,
+.axis line{
+  fill: none;
+    stroke: #5D2E46;
+    opacity: .2;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+	fill: #6395AA;
+}
+
+.jumbotron {
+	padding: 20px;
+	background-color: #A53D2B;
+	color: white;
+}
+
+.jumbotron h1 {
+	font-family: 'Abel', sans-serif;
+	font-weight: 400;
+	font-size: 50px;
+	text-align: center;
+	padding: 8px;
+}
+
+.jumbotron p {
+	padding-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+.btn {
+  background-color: #5D2E46;
+  border-color: #5D2E46;
+  font-size: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#bar-graphs {
+  background-color: white;
+}
+/*
+.icon-circ {
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #105D6D;
+}*/
+
+.icon-div {
+  max-width: 120px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.fa {
+  padding: 5px;
+}
+
+.row {
+  padding: 15px;
+}
+
+.option-display{
+  display: flex;
+  justify-content: space-between;
+}
+
+#scatter-plot svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.tipsy {
+  background-color: #5D2E46;
+  color: white;
+  text-align: center;
+}
