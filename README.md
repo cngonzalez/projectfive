@@ -1,24 +1,5 @@
-# README
+A fork of the Project Five hackathon project created by [irevived1](https://github.com/irevived1), [blazeiburgess](https://github.com/blazeiburgess), [GordonNY](https://github.com/gordonNY) and myself. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This fork was created to prevent conflicts with the original project's sqlite3 database and master branch.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can find it live [here](https://fathomless-spire-60843.herokuapp.com/).
