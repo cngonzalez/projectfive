@@ -3,7 +3,7 @@ var filename;
 var filename = $("#file").data("file");
 
 if (filename !== "") {
-  url = "/assets/" + filename; 
+  url = "/app/assets/" + filename; 
   $('.jumbotron h1').html(capitalizeEachWord(filename.replace(/\.\w*/,"").replace(/_/g," ")) + ", visualized");
 } else {
   url = "/assets/master.csv";
