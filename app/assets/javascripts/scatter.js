@@ -3,10 +3,10 @@ var filename;
 var filename = $("#file").data("file");
 
 if (filename !== "") {
-  url = "<%= asset_path('/assets/csv/') %>" + filename; 
+  url = '/assets/csv/' + filename; 
   $('.jumbotron h1').html(capitalizeEachWord(filename.replace(/\.\w*/,"").replace(/_/g," ")) + ", visualized");
 } else {
-  url = "<%= asset_path('/assets/csv/master.csv') %>";
+  url = '/assets/csv/master.csv';
 }
 
 var load = function (n1, n2) {  
