@@ -6,7 +6,7 @@ if (filename !== "") {
   url = '/assets/csv/' + filename; 
   $('.jumbotron h1').html(capitalizeEachWord(filename.replace(/\.\w*/,"").replace(/_/g," ")) + ", visualized");
 } else {
-  url = '/assets/csv/master.csv';
+  url = '../csv/master.csv';
 }
 
 var load = function (n1, n2) {  
