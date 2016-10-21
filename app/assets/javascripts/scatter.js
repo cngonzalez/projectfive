@@ -9,7 +9,7 @@ if (filename !== "") {
   var loc = window.location.pathname;
   var dir = loc.substring(0, loc.lastIndexOf('/'));
   console.log(dir);
-  url = "../master.csv";
+  url = "../../assets/master.csv";
 }
 
 var load = function (n1, n2) {  
