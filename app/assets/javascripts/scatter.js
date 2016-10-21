@@ -3,12 +3,12 @@ var filename;
 var filename = $("#file").data("file");
 
 if (filename !== "") {
-  var loc = window.location.pathname;
-  var dir = loc.substring(0, loc.lastIndexOf('/'));
-  console.log(dir);
   url = '/assets/csv/' + filename; 
   $('.jumbotron h1').html(capitalizeEachWord(filename.replace(/\.\w*/,"").replace(/_/g," ")) + ", visualized");
 } else {
+  var loc = window.location.pathname;
+  var dir = loc.substring(0, loc.lastIndexOf('/'));
+  console.log(dir);
   url = "../master.csv";
 }
 
