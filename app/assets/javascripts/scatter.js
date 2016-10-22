@@ -14,7 +14,8 @@ var load = function (n1, n2) {
     type: "GET",
     url: url,
     dataType: "text",
-    success: function(data) {  
+    success: function(data) {
+      console.log(data)
       parsedData = d3.csvParse(data);   
       firstData = Object.keys(parsedData[0])[n1];
       secondData = Object.keys(parsedData[0])[n2];
