@@ -15,20 +15,22 @@ var load = function (n1, n2) {
     url: url,
     dataType: "text",
     success: function(data) {
-      console.log(data)
       parsedData = d3.csvParse(data);   
       firstData = Object.keys(parsedData[0])[n1];
       secondData = Object.keys(parsedData[0])[n2];
       keys = Object.keys(parsedData[0]);
       if (keys.length - 1 > $('select.splot')[0].length ) {
         keys.forEach(function (key, index) {
-	  if (key !== "") {
-	    $('select').append("<option value=" + index + ">" + capitalizeEachWord(key.replace(/_/g," ")) + "</option>");
-	  }
+	        if (key !== "") {
+	          $('select').append("<option value=" + index + ">" + capitalizeEachWord(key.replace(/_/g," ")) + "</option>");
+	        }
         })
       }
       buildChart(parsedData, firstData, secondData);
       return data;
+    },
+    error: function(response) {
+      console.log(response)
     }
   })
 }
