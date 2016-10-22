@@ -99,6 +99,11 @@ class HomeController < ApplicationController
     render 'splash'
   end
 
+  def master
+    sample_csv = File.open('../assets/master.csv', 'r')
+    render plain: sample_csv.read
+  end
+
   private
 
   def calculateTheta(fileData)

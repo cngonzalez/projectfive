@@ -6,10 +6,7 @@ if (filename !== "") {
   url = '/assets/csv/' + filename; 
   $('.jumbotron h1').html(capitalizeEachWord(filename.replace(/\.\w*/,"").replace(/_/g," ")) + ", visualized");
 } else {
-  var loc = window.location.pathname;
-  var dir = loc.substring(0, loc.lastIndexOf('/'));
-  console.log(dir);
-  url = "../../../assets/master.csv";
+  url = "/master";
 }
 
 var load = function (n1, n2) {  
