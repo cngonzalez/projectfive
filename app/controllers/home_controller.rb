@@ -100,7 +100,7 @@ class HomeController < ApplicationController
   end
 
   def master
-    sample_csv = File.open('../assets/master.csv', 'r')
+    sample_csv = File.open('app/assets/master.csv', 'r')
     render plain: sample_csv.read
   end
 
