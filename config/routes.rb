@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :csvs
   get 'home/index'
 
   root to: "home#splash"
