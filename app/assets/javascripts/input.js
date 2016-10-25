@@ -52,7 +52,7 @@ $(function () {
   $("input").animate({
     "font-size":"1em"
   },1000);
-  d3.csv(("/assets/" + (filename ? filename : "master.csv")), function(error, data) {
+  d3.csv(("/" + (filename ? filename : "master")), function(error, data) {
     if (error) throw error;
     setglob(data);
     keys = Object.keys(data[0]);
